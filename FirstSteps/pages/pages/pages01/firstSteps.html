@@ -1,0 +1,16 @@
+<layout-row id="RowLayout1">
+	<layout-column id="ColumnLayout1" style="justify-content:center">
+		<layout-row id="RowLayout2" style="align-items:center">
+			<davinci-value-display id="ValueDisplay1" value="What's your name?">
+			</davinci-value-display>
+						<davinci-text-field id="TextField1" type="text" placeholder="Type your name here!">
+				<crown-binding event="change" name="FirstSteps/setName" path="param/args/change" auto-commit></crown-binding>
+			</davinci-text-field>
+		</layout-row>
+		<davinci-value-display id="ValueDisplay3">
+			<crown-edpws-binding property="value" name="FirstSteps/greetingUpdated" update-on-resume></crown-edpws-binding>
+			<crown-binding property="value" name="FirstSteps/getGreeting" path="result/data/value" auto-update="0" update-on-resume></crown-binding>
+			</davinci-value-display>
+	</layout-column>
+  
+</layout-row>

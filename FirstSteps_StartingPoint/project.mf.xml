@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest>
+    <application name="FirstSteps_StartingPoint">
+        <crown name="FirstSteps_StartingPoint">
+            <desc>user script</desc>
+            <serves>
+                <event name="greetingUpdated">
+                    <param desc="" multiplicity="1" name="greeting" type="string"/>
+                </event>
+                <function name="setName">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="change" type="string"/>
+                </function>
+                <function name="getGreeting">
+                    <return multiplicity="1" name="value" type="string"/>
+                </function>
+            </serves>
+        </crown>
+        <meta key="author">AppSpace Sample</meta>
+        <meta key="version">1.0</meta>
+        <meta key="priority">low</meta>
+        <meta key="copy-protected">false</meta>
+        <meta key="read-protected">false</meta>
+        <entry default="firstSteps.lua" path="scripts"/>
+    </application>
+</manifest>
