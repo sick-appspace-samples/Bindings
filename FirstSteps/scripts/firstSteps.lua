@@ -8,7 +8,7 @@ Script.register("Engine.OnStarted", main)
 -- serve API in global scope
 
 
---@setName(change:string):
+---@param change string
 local function setName(change)
   name = change
   greeting = "Hello " .. name .. "!"
@@ -18,7 +18,7 @@ end
 Script.serveFunction("FirstSteps.setName", setName)
 Script.serveEvent("FirstSteps.greetingUpdated", "greetingUpdated")
 
---@getGreeting():string
+---@return string greeting
 local function getGreeting()
   return greeting
 end
